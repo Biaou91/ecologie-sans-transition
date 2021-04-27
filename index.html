@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="style.css" />
-		<script src="jquery-3.5.1.js"></script>
-		<script src="jquery.js" ></script>
+
 		<title>Écologie sans transition</title>
 		<style>
 			body
@@ -40,14 +39,20 @@
 
     	<div class="portfolio">
     		<h2 id="titre">ECOLOGIE SANS TRANSITION</h2>
-    		<video id="video1" autoplay muted controls>
+    		<video id="video1" class="video" autoplay muted >
     			<source src="video/video.mp4">
     		</video>
-  			<video id="video2" autoplay muted controls>
+  			<video id="video2" class="video" autoplay muted >
   				<source src="video/videocarre.mp4">
   			</video>
-
+			<div class="muter">
+				<button id="mute">&#128360;</button>
+			</div>
 			</div>
 		</div>
+		<script src="https://kit.fontawesome.com/0afb561dbb.js" crossorigin="anonymous"></script>
+		<script src="jquery-3.5.1.js"></script>
+		<script src="jquery.js" ></script>
+		<script src="index.js"></script>
 	</body>
 </html>
