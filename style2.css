@@ -1,0 +1,382 @@
+/* oswald-regular - latin */
+@font-face /* police*/
+{
+  font-family: 'Oswald';
+  src: url('fonts/oswald-v35-latin-regular.eot'), /* IE9 Compat Modes */
+       url('fonts/oswald-v35-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/oswald-v35-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/oswald-v35-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/oswald-v35-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/oswald-v35-latin-regular.svg#Oswald') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+}
+html
+{
+	scroll-behavior: smooth;
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+body
+{
+	font-family : "Oswald";
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-size: 100%;
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+
+.index
+{
+	background-color: #f2f2f2;
+
+}	
+.button 
+{
+    z-index: 3;
+    position: fixed;
+    top: 25px;
+    left: 0px;
+    padding-left: 20px;
+    font-size: 2.5em;
+	cursor: pointer;
+	background-color: #1fe0;
+	color: #4F5369;
+	border: none;
+	outline: none;
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+
+.button.visible
+{
+	left : 350px;
+	transition: left 0.5s ease;
+}
+
+/* SIDEBAR */
+
+.sidebar 
+{
+    z-index: 2;
+    background-color: #22253E;
+    width: 350px;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    bottom: 0;
+    opacity: 1;
+    box-shadow: 1px 1px 1px black;
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+
+.sidebar.visible
+{
+	left : 0px;
+	transition : left 0.5s ease;
+}
+
+.sommaire
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+	height: 100%;
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+.part
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: static;
+	width: 300px;
+  	list-style: none;
+  	color: white;
+  	font-size: 1.3em;
+}
+h1 
+{
+    color: white;
+    font-size: 1.7em;
+}
+
+li:not(.part)
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: static;
+	width: 280px;
+	padding-left: 20px;
+	font-size: 1.1em;
+}
+.sommaire a 
+{
+  	color: white;
+  	text-decoration: none;
+}
+.sommaire a:hover
+{		
+	color: #E6C652;
+	cursor: pointer;
+}
+.part:hover
+{
+	color: #E67D62;
+}
+/* CORPS DE LA PAGE */
+
+#titre
+{
+	display: none;
+}
+
+.portfolio {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+	font-family: Georgia, Helvetica Neue, Helvetica, sans-serif; 
+
+}
+
+.portfolio.visible
+{
+	left : 350px;
+	transition: left 0.5s ease;
+}
+
+#video1
+{
+	display: block;
+	height: 100%;
+	width: 100%;
+	box-shadow: 0 0 5px 0 black;
+	object-fit: cover;
+	transition: left 0.5s ease;
+}
+#video2
+{
+	display: none;
+}
+.support
+{
+	background-color: white;
+	margin: 200px;
+	margin-top: 70px;
+	margin-bottom: 0;
+	padding-top: 35px;
+}
+p 
+{
+	line-height: 1.4em;
+}
+.texte
+{
+
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	font-size: 1.5em;
+}
+.images
+{
+	width: 100%;
+}
+.header
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 100px;
+	width: 100%;
+}
+.header a:hover
+{
+	opacity: 0.6;
+}
+.next
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 100px;
+	width: 100%;	
+	margin-bottom: 50px;
+}
+.next a:hover
+{
+	opacity: 0.6;
+}
+.arrow
+{
+	z-index: 1;
+	position: fixed;
+	bottom : 25px;
+	right: 25px;
+}
+
+.arrow a:hover
+{
+	opacity: 0.6;
+}
+.rescensions, .interviews, .bonnesfeuilles
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.rescensions a:hover, .interviews a:hover, .bonnesfeuilles a:hover
+{
+	opacity: 0.6;
+}
+
+
+
+
+
+							@media screen and (max-width: 1024px)
+							{
+
+							.button 
+							{
+							    position: fixed;
+							    font-size: 6em;
+								cursor: pointer;
+								background-color: #1fe0;
+								color: #4F5369;
+								border: none;
+								outline: none;
+								left: 0;
+
+							}
+							.button.visible
+							{
+								left: 740px;
+							}
+							.portfolio {
+
+							    position: absolute;
+							    top: 0;
+							    left: 0;
+							    width: 100%;
+							    height: 100%;					
+							}	
+							.portfolio.visible {
+								left : 1500px;
+							}
+							    .sidebar
+							    {
+							    	background-color: #373B53;
+							    	margin-left: auto;
+									margin-right: auto;
+									width: 100%;
+									height: 100%;
+									left : -1500px;	
+							    }
+							    .sidebar.visible
+							    {
+							    	left : 0;
+							    	transition : left 0.5s ease;
+							    }
+							    .sommaire
+							    {
+									margin-left: auto;
+									margin-right: auto;
+									position: absolute;
+									width: 100%;
+									top : 150px;
+									left: 0;
+									right: 0;
+									text-align: center;
+							    }
+							    li
+							    {
+							    	margin-left: auto;
+							    	margin-right: auto;
+							    	width: 100%;
+							    }
+							    .part
+							    {
+							    	font-size: 3.5em;
+							    	width: 100%;						
+							    }
+							    li:not(.part)
+							    {
+							    	font-size: 2.5em;
+							    	width: 80%;
+							    }
+							    h1
+							    {
+							    	font-size: 4em;
+							    }
+							    h2
+							    {
+							    	font-size: 4em;
+							    }
+							    body
+							    {
+							    	margin: 0;
+							    	padding: 0;
+							    }
+							    .support
+								{
+									background-color: white;
+									margin: 50px;
+									margin-top: 100px;
+									padding-top: 70px;
+									padding-bottom: 70px;
+
+								}
+							    .texte
+								{
+									
+									text-align: justify;
+									width: 100%;
+									font-size: 3em;
+								}
+								.header
+								{
+									margin-top: 300px;
+								}
+								#video1
+								{
+									display: none;
+								}
+								#video2
+								{
+									display: block;
+									margin-top: 200px;
+								}
+								#titre
+								{
+									position: fixed;
+									margin-top: 50px;
+									font-family: "Oswald";
+									width: 100%;
+									margin-left: auto;
+									margin-right: auto;
+									text-align: center;
+									color: #4F5369;
+								}
+								}
